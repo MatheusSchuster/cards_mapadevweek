@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider de Pokemon</title>
-    <link rel="shortcut icon" href="src/img/pokebola.png" type="image/x-icon">
+    <title>Genshin Characters</title>
+    <link rel="shortcut icon" href="src/img/estrela.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
@@ -19,60 +19,68 @@
 
 <body>
     <header class="cabecalho">
-        <img class="logo" src="src/img/pokebola.png" alt="icone pokébola">
-        <h1 class="titulo">MapaDev Week</h1>
+        <img class="logo" src="src/img/titulo-game.png" alt="icone pokébola">
     </header>
     <main class="slider">
-        <button  id="btn-voltar" class="btn-seta btn-voltar">
+        <button id="btn-voltar" class="btn-seta btn-voltar">
             <img src="src/img/seta.png" alt="seta anterior">
         </button>
         <ul class="lista-personagens">
             <li class="cartao selecionado fundo-1">
                 <div class="informacoes">
-                    <h2 class="nome">Pikachu</h2>
-                    <p class="hp">HP 300</p>
+                    <img class="elemento" src="src/img/anemo.png" alt="">
+                    <h2 class="nome">Barbatos</h2>
+                    <div class="numeroEstrelas ventiColor">
+                        <p>5</p>
+                        <img class="estrela" src="src/img/estrela.png" alt="Estrelas">
+                    </div>
+
+
                 </div>
                 <div class="container-imagem">
-                    <img class="imagem-personagem" src="src/img/pikachu.png" alt="pikachu">
+                    <img class="imagem-personagem" src="src/img/venti.png" alt="pikachu">
                 </div>
-                <div class="descricao">
-                    <h3 class="titulo">Descrição</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quae. Ex,
-                        quaerat rem tempora
-                        voluptate velit veritatis quae quibusdam assumenda ad? Rerum quasi dolor nemo impedit molestias
-                        ducimus nesciunt dolores.</p>
+                <div class="descricao ventiColor">
+                    <h3 class="titulo ventiColor">Descrição</h3>
+                    <p id="ventiScroll" class="texto">Quem é Barbatos? <br>
+                        Barbatos, também conhecido como Lorde Barbatos ou Deus da Liberdade, é o atual Arconte Anemo dos Sete que preside Mondstadt. Ele também é um dos dois membros originais dos Sete ainda vivos. Ele atualmente vagueia pelo mundo disfarçado de mortal como o bardo Venti.</p>
                 </div>
             </li>
             <li class="cartao fundo-2">
                 <div class="informacoes">
-                    <h2 class="nome">Charizard</h2>
-                    <p class="hp">HP 800</p>
+                    <img class="elemento" src="src/img/geo.png" alt="">
+                    <h2 class="nome">Morax</h2>
+                    <div class="numeroEstrelas zhongliColor">
+                        <p>5</p>
+                        <img class="estrela" src="src/img/estrela.png" alt="Estrelas">
+                    </div>
                 </div>
                 <div class="container-imagem">
-                    <img class="imagem-personagem" src="src/img/charizard.png" alt="charizard">
+                    <img class="imagem-personagem" src="src/img/zhongli.png" alt="charizard">
                 </div>
-                <divv class="descricao">
-                    <h3 class="titulo">Descrição</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quae. Ex,
-                        quaerat rem tempora
-                        voluptate velit veritatis quae quibusdam assumenda ad? Rerum quasi dolor nemo impedit molestias
-                        ducimus nesciunt dolores.</p>
+                <divv class="descricao zhongliColor">
+                    <h3 class="titulo zhongliColor">Descrição</h3>
+                    <p id="zhongliScroll" class="texto">Quem é Morax? <br>
+                        Morax, também conhecido como o Deus dos Contratos e Rex Lapis, foi o Arconte Geo anterior e um dos Sete que presidiu Liyue. Ele também é um dos dois membros originais dos Sete que ainda estavam vivos no início do jogo. Morax forjou sua própria morte como uma forma obter sua aposentadoria, e atualmente é conhecido como Zhongli, apenas um sábio. 
+                    </p>
                     </div>
             </li>
             <li class="cartao fundo-3">
                 <div class="informacoes">
-                    <h2 class="nome">Mewtwo</h2>
-                    <p class="hp">HP 1200</p>
+                    <img class="elemento" src="src/img/eletro.png" alt="">
+                    <h2 class="nome">Shogun</h2>
+                    <div class="numeroEstrelas raidenColor">
+                        <p>5</p>
+                        <img class="estrela" src="src/img/estrela.png" alt="Estrelas">
+                    </div>
                 </div>
                 <div class="container-imagem">
-                    <img class="imagem-personagem" src="src/img/mewtwo.png" alt="mewtwo">
+                    <img class="imagem-personagem" src="src/img/raiden.png" alt="mewtwo">
                 </div>
-                <div class="descricao">
-                    <h3 class="titulo">Descrição</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quae. Ex,
-                        quaerat rem tempora
-                        voluptate velit veritatis quae quibusdam assumenda ad? Rerum quasi dolor nemo impedit molestias
-                        ducimus nesciunt dolores.</p>
+                <div class="descricao raidenColor">
+                    <h3 class="titulo raidenColor">Descrição</h3>
+                    <p id="raidenScroll" class="texto">Quem é a Raiden Shogun? <br>
+                        Shogun Raiden é a Arconde Eletro atual de Inazuma, diferente dos demais Arcondes, seu corpo é de uma marionete conhecida como Raiden Shogun, ela possui vontade vonta prória. Pois  eu no entanto, sua verdadeira conciência, chamada de Ei medita eternamente dentro do Plano da Eutimia.</p>
                 </div>
             </li>
         </ul>

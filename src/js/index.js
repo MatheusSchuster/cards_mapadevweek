@@ -13,14 +13,21 @@ function mostrarCartao(indiceCartao) {
 }
 
 btnAvancar.addEventListener("click", function () {
-  if (cartaoAtual === cartoes.length - 1) return;
+  if (cartaoAtual === cartoes.length-1) {
+    cartaoAtual = 0;
+    esconderCartaoSelecionado();
+    mostrarCartao(cartaoAtual);
+    return;
+  }
   esconderCartaoSelecionado();
   cartaoAtual++;
   mostrarCartao(cartaoAtual);
 });
 
 btnVoltar.addEventListener("click", function () {
-  if (cartaoAtual === 0) return;
+  if (cartaoAtual === 0) {
+    cartaoAtual = cartoes.length
+  }
   esconderCartaoSelecionado();
   cartaoAtual--;
   mostrarCartao(cartaoAtual);
